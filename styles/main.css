@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;500&display=swap');
+
+:root{
+
+    --mainColorFoot: rgb(216, 237, 255);
+
+    --Main-color : #152340
+
+}
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sono', sans-serif;
+    
+    color: var(--mainColorFoot);
+    
+
+}
+
+body{
+
+    background-color: var(--Main-color);
+    
+
+}
+
+.sections{
+
+    overflow: hidden;
+    display: grid;
+    gap: 8rem;
+    
+}
+
+.laterals{
+    
+    position: relative
+
+}
+
+.Head{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+
+    
+}
+
+.Head h1{
+    
+    padding-left: 1rem;
+    font-weight: 100;
+    color: #F2887E;
+    
+}
+
+.Head ul{
+
+    display: flex;
+    
+}
+
+.Head ul li{
+    
+    display: block;
+    padding: 1.5rem;
+    
+}
+
+.Hero{
+
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    block-size: 100vh;
+
+    position: relative;
+    
+    
+    
+    
+}
+
+.Hero .msg{
+    
+    display: grid;
+    justify-items: center;
+    justify-items: center;
+    /* position: relative; */
+    
+    
+}
+.Hero .msg span{
+    /* 
+    position: absolute; */
+    top: 50% ;
+    
+    
+}
+
+.Hero .infSlide{
+    
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 10%;
+    
+}
+
+
+.Hero h1{
+    
+    font-weight: 400;
+    font-size: 6rem;
+
+}
+
+.Hero .msg span{
+    
+    font-weight: 100;
+    font-size: small;
+    color: #F2887E;
+
+}
+
+.Hero span{
+
+    font-weight: 100;
+    font-size: small;
+
+}
+
+section{
+
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    border-radius: 1rem;
+    block-size: 100vh;
+    margin: 8rem;
+    gap: 7rem;
+}
+
+.whoImg{
+    
+    background: url(https://www.enwallpaper.com/wp-content/uploads/2022/09/HD-wallpaper-edward-norton-brad-pitt-men-actor-fight-club-movies-artwork-cigarettes-smoking.jpg) no-repeat center ;
+    background-size: cover;
+    
+    inline-size: 100%;
+    block-size: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    transition: all 1s;
+
+    
+}
+
+.whoImg:hover, .whoInf:hover{
+    
+    transform: scale(1.1);
+    
+}
+
+.whoImg:hover ~ .whoInf, .whoInf:hover ~ .whoImg{
+    
+    transform: scale(0.9);
+
+}
+
+.whoInf{
+    
+    display: grid;
+    gap: 5rem;
+    padding: 7rem 0 7rem 7rem;
+    
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+    background-color:#2E4159 ;
+    transition: all 1s;
+    
+}
+
+.whoInf .inf{
+    
+    padding-right: 7rem;
+    
+}
+
+.sections h2, .sections span{
+    
+    color: #F2887E;
+    
+}
+
+.goalsInf{
+    
+    display: grid;
+    gap: 5rem;
+    padding: 7rem;
+    
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    
+    background-color:#2E4159 ;
+    transition: all 1s;
+    
+}
+
+.goalsImg{
+    
+    background: url(https://declutterthemind.com/wp-content/uploads/peace-of-mind-2.jpg) no-repeat;
+    background-position: right;
+    background-size: cover;
+    
+    inline-size: 100%;
+    block-size: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    transition: all 1s;
+
+    
+}
+
+.line{
+    
+    width: 5px;
+    height: 100%;
+    border-radius: 1rem;
+    top:0;
+    right: 50%;
+    position: absolute;
+    background-color: #F2887E;
+
+}
+
+.section3{
+
+    display: flex;
+    align-items: flex-start;
+    margin-inline: 8rem;
+    border-radius: 1rem;
+
+}
+
+/* Animation config */
+
+.hiddenLeft{
+    
+    opacity: 0;
+    
+    filter: blur(5px);
+    transform: translateX(-100%);
+    
+    transition: all 4s;
+    
+}
+
+.leftShow{
+
+    opacity: 1;
+
+    filter: blur(0);
+    transform: translateX(0);
+
+}
+
+.hiddenRight{
+
+    opacity: 0;
+
+    filter: blur(5px);
+    transform: translateX(100%);
+
+    transition: all 4s;
+
+}
+
+.rightShow{
+
+    opacity: 1;
+
+    filter: blur(0);
+    transform: translateX(0);
+
+}
+
+.hiddenDown{
+
+    opacity: 0;
+
+    filter: blur(5px);
+    transform: translateY(-100%);
+
+    transition: all 7s;
+
+}
+
+.downShow{
+
+    opacity: 1;
+
+    filter: blur(0);
+    transform: translateY(0);
+
+}
+
+.hiddenUp{
+
+    opacity: 0;
+
+    filter: blur(5px);
+    transform: translateY(100%);
+
+    transition: all 2s;
+
+}
+
+.upShow{
+
+    opacity: 1;
+
+    filter: blur(0);
+    transform: translateY(0);
+
+}
+
+
+.main{
+
+    opacity: 0;
+
+    transition: all 2s;
+
+}
+
+.mainShow{
+
+    opacity: 1;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
