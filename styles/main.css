@@ -247,9 +247,37 @@ section{
 .section3{
 
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     margin-inline: 8rem;
     border-radius: 1rem;
+    padding-top: 2rem;
+
+}
+
+.section3 .padre{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+
+}
+
+.card{
+
+    background-color: #ffffffce;
+
+}
+
+.card .proTitle{
+
+    color:black
+
+}
+
+.card .proDes{
+
+    color: black;
 
 }
 
